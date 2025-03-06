@@ -5,7 +5,7 @@
 </p>
 
 <!-- Title -->
-<h1 align="center"><b>IS217.O21 - Phân Tích Dữ Liệu</b></h1>
+<h1 align="center"><b>IS217.O21 - Kho Dữ Liệu Và OLAP</b></h1>
 
 
 ## ĐỒ ÁN MÔN HỌC
