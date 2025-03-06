@@ -1,0 +1,861 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f79105f-75e4-428b-8b05-1df2cdf81f24" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Data Mining Train</ID>
+  <Name>Data Mining Train</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Data_Mining</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4192" scrolltop="-3003" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14224" y="11007" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a300009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Data_Mining" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5800" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000a816000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Data_Mining" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4192</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3003</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7d45cdd0-6a16-4d5e-a1be-e6b007315381">
+    <DataSourceViewID>Data Mining</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c8c74367-3649-4901-af33-7ab71c499c18">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="397e6ab6-28f9-45a1-a828-45d320d0e89b">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82df261f-eb8b-49d1-bb50-a74f314aa764">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="096b83c9-f427-4a69-8a3d-c10c41a06655">
+      <ID>Arrival Delay In Minutes</ID>
+      <Name>Arrival Delay In Minutes</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bda51b0b-8383-427e-ae51-6726220d5425">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="80aca4b5-f07a-450b-a68e-880c185cfe89">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Arrival_Delay_in_Minutes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8f91777f-75cb-4359-ad95-360d07fad5a9">
+      <ID>Baggage Handling</ID>
+      <Name>Baggage Handling</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f009d31d-2d7f-4edc-afd2-0a779f7b4d03">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a2440f4-6238-4cd8-afa8-4a58440c87f2">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Baggage_handling</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9a4173a6-620c-45cf-96c6-82d87d39cf38">
+      <ID>Class</ID>
+      <Name>Class</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd321601-9034-4db0-b667-dae18573e964">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad8d28a4-c21a-4960-9af5-9a2ad3f9fb89">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d9a06be1-b764-49c0-ac62-41538385e3ea">
+      <ID>Cleanliness</ID>
+      <Name>Cleanliness</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0fa79a4-1c4c-4b6a-a603-7f5c5e8a3022">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d7b9707-5d7c-4c27-abce-14b3c57fcdb2">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Cleanliness</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="17e81692-9208-4d4c-b98c-04894b8727eb">
+      <ID>Customer Type</ID>
+      <Name>Customer Type</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="141e77e4-58c8-42ab-b32c-35be5ae0b7cc">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82329b22-87d2-4a46-aba4-b2f6b35f4243">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Customer_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="040f9725-0d41-4cef-8205-010de989f96d">
+      <ID>Checkin Service</ID>
+      <Name>Checkin Service</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="acd4c9b6-935a-4d49-a8fc-48b8720ec09b">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4987ac2b-1586-4b59-8e45-4369fdc586fc">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Checkin_service</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0cd09161-3c5a-4a06-ad68-4cc45f1aca5f">
+      <ID>Departure Arrival Time Convenient</ID>
+      <Name>Departure Arrival Time Convenient</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6d869aea-aea5-48f2-be42-ae7442f46979">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="93b17458-bc6f-4033-8a5b-5c11f78f1910">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Departure_Arrival_time_convenient</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3f2ec3c2-ccd4-4276-9e98-ea0cb3d62226">
+      <ID>Departure Delay In Minutes</ID>
+      <Name>Departure Delay In Minutes</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f2bc7ec3-41cb-4d06-baa0-09ce99ef401b">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c4ee851-c466-4dcb-ae22-3b793e862558">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Departure_Delay_in_Minutes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="cfa2d85a-3e9c-4268-84a6-8719dce7e7b4">
+      <ID>Ease Of Online Booking</ID>
+      <Name>Ease Of Online Booking</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ddcb9766-d2d0-436e-ac9b-bea6046c0e2c">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae2efc58-7ab7-407b-a821-bab61bdd730a">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Ease_of_Online_booking</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dc08eb8f-4695-413b-a6fb-971c3396cb2d">
+      <ID>Flight Distance</ID>
+      <Name>Flight Distance</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5f38c6f-2f7b-418a-996a-7823df73c43f">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5294065-802e-4b4c-98e5-67f2181cf86b">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Flight_Distance</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7bb50aab-8be8-4029-84ed-c4bd5d49994f">
+      <ID>Food And Drink</ID>
+      <Name>Food And Drink</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f2ac3271-6c66-4dce-848d-329cfe667087">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9be1383a-f706-453a-b921-37514988198e">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Food_and_drink</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="498d2e80-7685-48eb-965c-6741cd6af5b0">
+      <ID>Gate Location</ID>
+      <Name>Gate Location</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5dace02-262a-4b52-9b10-264ba77aa147">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10d159aa-163e-4998-87ee-1fbc45493b19">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Gate_location</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="649654ba-630e-4da8-9e0a-76ad83304c90">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a9b8324f-c1ae-4340-a091-7730d21878c8">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="739f7a45-593e-4dae-bd70-06da8ed38600">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d6656e13-a73d-429f-a97a-de0f32277f82">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <IsKey>true</IsKey>
+      <Type>Double</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d8422d98-e90c-4bd0-9f83-61f1cf4f1ae0">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2410ee62-b255-4068-8550-d203fa2a3ed3">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d7947a27-7d9e-46d4-bfff-9d3d7697b455">
+      <ID>Inflight Entertainment</ID>
+      <Name>Inflight Entertainment</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d25690a8-3f5a-4cda-8a2c-e42346c2a5dd">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f79ba076-21eb-4544-93dd-18b9b81243f9">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Inflight_entertainment</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="51cf2af9-bc3d-4a4b-99ad-8d1b7d9bae6d">
+      <ID>Inflight Service</ID>
+      <Name>Inflight Service</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="48367210-6c4c-45c3-a7d6-54bf5e365042">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4be0c38-5c67-4c83-bb5c-d3022e840f74">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Inflight_service</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6ef5898b-5297-49ac-8d6a-c2118afdc6c7">
+      <ID>Inflight Wifi Service</ID>
+      <Name>Inflight Wifi Service</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aeaf88e0-46b4-462d-a441-7db564f06d15">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df017cb0-f39f-4f7b-82f8-d1230587b278">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Inflight_wifi_service</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e92d5cab-1743-4897-8490-edaf5abdaab2">
+      <ID>Leg Room Service</ID>
+      <Name>Leg Room Service</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6f816039-5bb9-4aab-a64f-bae35da09399">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a342679d-bba6-4873-a4d2-7f06feaebce6">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Leg_room_service</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ae9bed63-f9ad-4480-bee6-79b356d01d70">
+      <ID>On Board Service</ID>
+      <Name>On Board Service</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e5b00845-ec29-4e93-98d4-93148dde9242">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17522e87-9c03-471c-aa0d-ad701381d96d">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>On_board_service</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f1499803-7972-4230-ba14-a4b9aafdb1c3">
+      <ID>Online Boarding</ID>
+      <Name>Online Boarding</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0b9e7d03-c9cb-465a-b9b4-0c84b946a419">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="96a3a513-a616-4f4b-8cc3-aab969b4396c">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Online_boarding</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8fd2f7b3-817d-47d5-be9a-1bf8155a6ca1">
+      <ID>Satisfaction</ID>
+      <Name>Satisfaction</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a357a66-c501-46a1-ab1e-e08244574a79">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="58bba461-bc95-4a2f-b980-20aa9ae3bdba">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>satisfaction</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="90386070-2951-46aa-af09-78aa82d1993b">
+      <ID>Seat Comfort</ID>
+      <Name>Seat Comfort</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da3ea402-8ab3-4473-8eb9-14688b3096b0">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6a54cd5-a853-4034-ae39-fbcbf6413815">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Seat_comfort</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2b3c73fe-18ff-4540-adf5-3a150e3525b1">
+      <ID>Type Of Travel</ID>
+      <Name>Type Of Travel</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="047372aa-96a7-4fe4-b44c-01c9ca86b4d3">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="933bd6f7-2a72-45ee-84dd-e7a6ab24b03a">
+            <TableID>dbo_Data_Mining</TableID>
+            <ColumnID>Type_of_Travel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="4fbd33af-dc2c-4aa5-9f85-f4764bafda98">
+      <ID>Data Mining Train Tree</ID>
+      <Name>Data Mining Train Tree</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="8b4c0e36-2bfe-4703-9233-4081756c03e3">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="feb85ac5-23de-4a8b-9a95-39156eedfedb">
+          <ID>Arrival Delay In Minutes</ID>
+          <Name>Arrival Delay In Minutes</Name>
+          <SourceColumnID>Arrival Delay In Minutes</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="b9b2985c-3c23-4895-a6c6-69000b4de8a3">
+          <ID>Baggage Handling</ID>
+          <Name>Baggage Handling</Name>
+          <SourceColumnID>Baggage Handling</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2aee795d-c959-4c76-ae30-963fbcb0b98b">
+          <ID>Class</ID>
+          <Name>Class</Name>
+          <SourceColumnID>Class</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="942c47f4-978c-4cd5-9663-864f21b6b0d3">
+          <ID>Cleanliness</ID>
+          <Name>Cleanliness</Name>
+          <SourceColumnID>Cleanliness</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ec94b24f-d22b-47df-81d4-ccf6d7db80fa">
+          <ID>Customer Type</ID>
+          <Name>Customer Type</Name>
+          <SourceColumnID>Customer Type</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7766915d-717d-4f90-af0b-73c2db9b7f39">
+          <ID>Checkin Service</ID>
+          <Name>Checkin Service</Name>
+          <SourceColumnID>Checkin Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="335d164a-27e6-4f72-97cc-4d0c997c6c12">
+          <ID>Departure Arrival Time Convenient</ID>
+          <Name>Departure Arrival Time Convenient</Name>
+          <SourceColumnID>Departure Arrival Time Convenient</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="8775d075-0828-4716-acfb-7a7978574be5">
+          <ID>Departure Delay In Minutes</ID>
+          <Name>Departure Delay In Minutes</Name>
+          <SourceColumnID>Departure Delay In Minutes</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="7394866f-9c9b-4b66-b7c7-4a31aadfe96b">
+          <ID>Ease Of Online Booking</ID>
+          <Name>Ease Of Online Booking</Name>
+          <SourceColumnID>Ease Of Online Booking</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="de79d786-e9db-4cc3-9444-e61f5c025e0d">
+          <ID>Flight Distance</ID>
+          <Name>Flight Distance</Name>
+          <SourceColumnID>Flight Distance</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="dd3f04ae-259d-4b3d-9c4f-378c0ad7d72c">
+          <ID>Food And Drink</ID>
+          <Name>Food And Drink</Name>
+          <SourceColumnID>Food And Drink</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d39bbaaa-6174-4934-b099-28f94b41920f">
+          <ID>Gate Location</ID>
+          <Name>Gate Location</Name>
+          <SourceColumnID>Gate Location</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4fe9d552-1004-44cd-ab5f-68e176340e28">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ea63f9c9-8856-420b-bf50-84c79b0da345">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <SourceColumnID>Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="4149222a-5969-4605-b98e-e4303313458f">
+          <ID>Inflight Entertainment</ID>
+          <Name>Inflight Entertainment</Name>
+          <SourceColumnID>Inflight Entertainment</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0bf51694-0999-4858-9b54-f512942322cb">
+          <ID>Inflight Service</ID>
+          <Name>Inflight Service</Name>
+          <SourceColumnID>Inflight Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="765ac623-41e1-4ed3-9cf7-db92c5cf6ba5">
+          <ID>Inflight Wifi Service</ID>
+          <Name>Inflight Wifi Service</Name>
+          <SourceColumnID>Inflight Wifi Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="2bb8a487-234d-4654-9684-1343e5ac4510">
+          <ID>Leg Room Service</ID>
+          <Name>Leg Room Service</Name>
+          <SourceColumnID>Leg Room Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b5583b8c-3dad-4a4b-b402-9b05a16df61b">
+          <ID>On Board Service</ID>
+          <Name>On Board Service</Name>
+          <SourceColumnID>On Board Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ea2731a1-c419-402c-95db-2f717a4f4695">
+          <ID>Online Boarding</ID>
+          <Name>Online Boarding</Name>
+          <SourceColumnID>Online Boarding</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="39417bec-af90-4179-b0bb-243d4023b4db">
+          <ID>Satisfaction</ID>
+          <Name>Satisfaction</Name>
+          <SourceColumnID>Satisfaction</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="b6507045-24ba-4a6f-aa73-68c9da7626a2">
+          <ID>Seat Comfort</ID>
+          <Name>Seat Comfort</Name>
+          <SourceColumnID>Seat Comfort</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="fad7a9f1-94fc-4452-a7fa-071816e7794f">
+          <ID>Type Of Travel</ID>
+          <Name>Type Of Travel</Name>
+          <SourceColumnID>Type Of Travel</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="db6c54d0-e128-46a3-9c67-a4890af9870f">
+      <ID>Clustering</ID>
+      <Name>Clustering</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="04b24fd6-e3a7-4fb8-986d-26edb0363120">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="99f42803-a2ab-493f-947f-7abcae14efc0">
+          <ID>Arrival Delay In Minutes</ID>
+          <Name>Arrival Delay In Minutes</Name>
+          <SourceColumnID>Arrival Delay In Minutes</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c2478829-5d42-4008-aed9-52de78e0ba62">
+          <ID>Baggage Handling</ID>
+          <Name>Baggage Handling</Name>
+          <SourceColumnID>Baggage Handling</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="902edc22-0733-409a-9e5f-14ce6c7f8428">
+          <ID>Class</ID>
+          <Name>Class</Name>
+          <SourceColumnID>Class</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="96320918-377c-4959-93b4-cee3022028ab">
+          <ID>Cleanliness</ID>
+          <Name>Cleanliness</Name>
+          <SourceColumnID>Cleanliness</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="64738b71-accf-4eb2-8d95-a2bb6644954c">
+          <ID>Customer Type</ID>
+          <Name>Customer Type</Name>
+          <SourceColumnID>Customer Type</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="58024fda-15f0-480b-b762-9f79251f3f06">
+          <ID>Checkin Service</ID>
+          <Name>Checkin Service</Name>
+          <SourceColumnID>Checkin Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="de54bf31-3d36-4bc3-b6d3-03bbd4f59222">
+          <ID>Departure Arrival Time Convenient</ID>
+          <Name>Departure Arrival Time Convenient</Name>
+          <SourceColumnID>Departure Arrival Time Convenient</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a7df0a6e-6b57-4069-98ce-54c28641e47c">
+          <ID>Departure Delay In Minutes</ID>
+          <Name>Departure Delay In Minutes</Name>
+          <SourceColumnID>Departure Delay In Minutes</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c9f86429-148a-4d81-89c2-d9a306f1fa8e">
+          <ID>Ease Of Online Booking</ID>
+          <Name>Ease Of Online Booking</Name>
+          <SourceColumnID>Ease Of Online Booking</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ca60fcc9-2dab-42a0-ae3a-557874d23658">
+          <ID>Flight Distance</ID>
+          <Name>Flight Distance</Name>
+          <SourceColumnID>Flight Distance</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="18baa1ab-bfb4-4f03-b326-b0fdcb2d6688">
+          <ID>Food And Drink</ID>
+          <Name>Food And Drink</Name>
+          <SourceColumnID>Food And Drink</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="987fcbe3-3f8b-4429-9c87-29787424fe1a">
+          <ID>Gate Location</ID>
+          <Name>Gate Location</Name>
+          <SourceColumnID>Gate Location</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="3821cb9f-26d0-422f-9ed3-3c3b3f6bcebf">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4139b320-7964-47d4-98af-ca3039f3027b">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <SourceColumnID>Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="14193a85-2772-4bb6-a320-2a279effd1bc">
+          <ID>Inflight Entertainment</ID>
+          <Name>Inflight Entertainment</Name>
+          <SourceColumnID>Inflight Entertainment</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d8832169-3455-4073-82d8-551e117bb19b">
+          <ID>Inflight Service</ID>
+          <Name>Inflight Service</Name>
+          <SourceColumnID>Inflight Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="87dcd714-2b78-4ffd-95e3-9b59f3b14ad1">
+          <ID>Inflight Wifi Service</ID>
+          <Name>Inflight Wifi Service</Name>
+          <SourceColumnID>Inflight Wifi Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ad064f1d-7be5-4f03-b283-9ccb09aced0a">
+          <ID>Leg Room Service</ID>
+          <Name>Leg Room Service</Name>
+          <SourceColumnID>Leg Room Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="516594f7-20de-4a23-b1a4-920526bea861">
+          <ID>On Board Service</ID>
+          <Name>On Board Service</Name>
+          <SourceColumnID>On Board Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="bab5393b-cae3-4cc2-be11-29be9c77af3a">
+          <ID>Online Boarding</ID>
+          <Name>Online Boarding</Name>
+          <SourceColumnID>Online Boarding</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5d6c1213-b463-4632-953b-a510039502e8">
+          <ID>Satisfaction</ID>
+          <Name>Satisfaction</Name>
+          <SourceColumnID>Satisfaction</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="4403d1ae-4128-4131-bc1e-a8af5ce314d2">
+          <ID>Seat Comfort</ID>
+          <Name>Seat Comfort</Name>
+          <SourceColumnID>Seat Comfort</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f965bb45-ba2e-4ba4-870a-e327f7d25006">
+          <ID>Type Of Travel</ID>
+          <Name>Type Of Travel</Name>
+          <SourceColumnID>Type Of Travel</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="71991b5f-67b2-450d-9a1f-754dfb8107bc">
+      <ID>Naive Bayes</ID>
+      <Name>Naive Bayes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="73b7db08-afa6-491c-9ce5-3b596fa18699">
+          <ID>Baggage Handling</ID>
+          <Name>Baggage Handling</Name>
+          <SourceColumnID>Baggage Handling</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="5337a2a3-a00b-4ee1-9509-ffd52ed836e9">
+          <ID>Class</ID>
+          <Name>Class</Name>
+          <SourceColumnID>Class</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f3196b95-4b3a-4caa-aeba-090456471114">
+          <ID>Cleanliness</ID>
+          <Name>Cleanliness</Name>
+          <SourceColumnID>Cleanliness</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ecfa0043-3958-4d31-a4d0-8ff7c34008de">
+          <ID>Customer Type</ID>
+          <Name>Customer Type</Name>
+          <SourceColumnID>Customer Type</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="0a1547f1-84f2-46cd-9e6e-fa17008e50c3">
+          <ID>Checkin Service</ID>
+          <Name>Checkin Service</Name>
+          <SourceColumnID>Checkin Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="1409feac-ac9b-4d0c-b1af-feffc0cc2d39">
+          <ID>Departure Arrival Time Convenient</ID>
+          <Name>Departure Arrival Time Convenient</Name>
+          <SourceColumnID>Departure Arrival Time Convenient</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ce5eac80-8962-407e-bf8c-52a8e8ab7723">
+          <ID>Ease Of Online Booking</ID>
+          <Name>Ease Of Online Booking</Name>
+          <SourceColumnID>Ease Of Online Booking</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="da97fb1c-85f3-467a-8a74-b29d3002b3b1">
+          <ID>Food And Drink</ID>
+          <Name>Food And Drink</Name>
+          <SourceColumnID>Food And Drink</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c544ee43-a89a-42b1-b325-b6de0c191fb5">
+          <ID>Gate Location</ID>
+          <Name>Gate Location</Name>
+          <SourceColumnID>Gate Location</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="154675d6-4d10-45d6-ae51-8ba07596b0fe">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="56a9a621-09fd-4059-82d7-caeadb32f2d2">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <SourceColumnID>Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="d5af2af8-89ab-489a-b853-ba8c04906fe5">
+          <ID>Inflight Entertainment</ID>
+          <Name>Inflight Entertainment</Name>
+          <SourceColumnID>Inflight Entertainment</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="78722ec7-fc1d-4021-8c74-097ce3cfb6b0">
+          <ID>Inflight Service</ID>
+          <Name>Inflight Service</Name>
+          <SourceColumnID>Inflight Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="cd6bc1b9-2ef2-42c8-90bd-f813a617c133">
+          <ID>Inflight Wifi Service</ID>
+          <Name>Inflight Wifi Service</Name>
+          <SourceColumnID>Inflight Wifi Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="761c3d2f-9aea-4e20-a3bd-4d69274b1238">
+          <ID>Leg Room Service</ID>
+          <Name>Leg Room Service</Name>
+          <SourceColumnID>Leg Room Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="dc378af0-ff01-447e-b564-f1674169063c">
+          <ID>On Board Service</ID>
+          <Name>On Board Service</Name>
+          <SourceColumnID>On Board Service</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="50e7d95c-3d37-49bb-a286-9c0fc117c46c">
+          <ID>Online Boarding</ID>
+          <Name>Online Boarding</Name>
+          <SourceColumnID>Online Boarding</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7c863143-15a8-44b9-9e8f-48b12a5a2ff0">
+          <ID>Satisfaction</ID>
+          <Name>Satisfaction</Name>
+          <SourceColumnID>Satisfaction</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="3e6fffce-a070-495d-bef0-4851f540293f">
+          <ID>Seat Comfort</ID>
+          <Name>Seat Comfort</Name>
+          <SourceColumnID>Seat Comfort</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="182f9532-64cf-49f6-a5cd-c17164257ca3">
+          <ID>Type Of Travel</ID>
+          <Name>Type Of Travel</Name>
+          <SourceColumnID>Type Of Travel</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+  <ddl100_100:HoldoutMaxCases>10000</ddl100_100:HoldoutMaxCases>
+  <ddl100_100:HoldoutSeed>12</ddl100_100:HoldoutSeed>
+</MiningStructure>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>Turkey_MarketSales</DataSourceReference>
+      <CommandText> SELECT 
+NON EMPTY [Measures].[SoLuong] ON COLUMNS, 
+NON EMPTY {[Dim Time].[Invoice Date Month].[Invoice Date Month].ALLMEMBERS * TOPCOUNT([Dim Product].[Category Name].[Category Name],5,[Measures].[SoLuong])} ON ROWS 
+FROM [Turkey Market Sales]</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>MDX</CommandType>
+          <Type>Query</Type>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Time</DimensionName>
+                    <HierarchyName>Invoice Date Month</HierarchyName>
+                    <HierarchyUniqueName>[Dim Time].[Invoice Date Month]</HierarchyUniqueName>
+                    <LevelName>Invoice Date Month</LevelName>
+                    <UniqueName>[Dim Time].[Invoice Date Month].[Invoice Date Month]</UniqueName>
+                  </ID>
+                  <ItemCaption>Invoice Date Month</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Product</DimensionName>
+                    <HierarchyName>Category Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Product].[Category Name]</HierarchyUniqueName>
+                    <LevelName>Category Name</LevelName>
+                    <UniqueName>[Dim Product].[Category Name].[Category Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Category Name</ItemCaption>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>SoLuong</MeasureName>
+                    <UniqueName>[Measures].[SoLuong]</UniqueName>
+                  </ID>
+                  <ItemCaption>SoLuong</ItemCaption>
+                  <FormattedValue>true</FormattedValue>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Turkey Market Sales</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties />
+          </QuerySpecification>
+          <Query>
+            <Statement> SELECT 
+NON EMPTY [Measures].[SoLuong] ON COLUMNS, 
+NON EMPTY {[Dim Time].[Invoice Date Month].[Invoice Date Month].ALLMEMBERS * TOPCOUNT([Dim Product].[Category Name].[Category Name],5,[Measures].[SoLuong])} ON ROWS 
+FROM [Turkey Market Sales]</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Invoice_Date_Month">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Dim Time].[Invoice Date Month].[Invoice Date Month]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Category_Name">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Dim Product].[Category Name].[Category Name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SoLuong">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[SoLuong]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

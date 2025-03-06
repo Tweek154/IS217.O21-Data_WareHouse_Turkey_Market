@@ -1,0 +1,491 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="98c01260-c31d-46ca-9993-7f23e2c5d9b5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Time</ID>
+  <Name>Dim Time</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1388" scrolltop="-3672" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7176" y="11091" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01a300009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Time" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4360" height="3747" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000008110000a30e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1388</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3672</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="11" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="205">
+            <Shape Id="Invoice Date Time" Expanded="true">
+              <Attributes>
+                <Attribute Id="Invoice Date Time" />
+                <Attribute Id="Invoice Date Dayofweek" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Invoice Date Second" Expanded="false">
+              <Attributes>
+                <Attribute Id="Invoice Date Second" />
+              </Attributes>
+              <Position x="281" y="20" />
+            </Shape>
+            <Shape Id="Invoice Date Minute" Expanded="false">
+              <Attributes>
+                <Attribute Id="Invoice Date Minute" />
+              </Attributes>
+              <Position x="542" y="20" />
+            </Shape>
+            <Shape Id="Invoice Date Hour" Expanded="false">
+              <Attributes>
+                <Attribute Id="Invoice Date Hour" />
+              </Attributes>
+              <Position x="803" y="20" />
+            </Shape>
+            <Shape Id="Invoice Date Day" Expanded="false">
+              <Attributes>
+                <Attribute Id="Invoice Date Day" />
+              </Attributes>
+              <Position x="804" y="96" />
+            </Shape>
+            <Shape Id="Invoice Date Month" Expanded="false">
+              <Attributes>
+                <Attribute Id="Invoice Date Month" />
+              </Attributes>
+              <Position x="542" y="98" />
+            </Shape>
+            <Shape Id="Invoice Date Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Invoice Date Year" />
+              </Attributes>
+              <Position x="278" y="99" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="cf37d4cc-6d18-425a-a402-5ac30c952b2c">
+    <DataSourceViewID>Turkey Market Sales</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="2d56be5c-0030-4f24-91cb-c6b971a8f844">
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7f76e733-9712-4d43-b244-4aea267d2721">
+      <ID>Invoice Date Time</ID>
+      <Name>Invoice Date Time</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6878697-4d55-4133-b4ec-41242fe43a75">
+          <DataType>Date</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="abf28a21-1c5c-44be-856b-984f96a26b6a">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c0baf949-578c-4de3-b8c3-f1f5b5402dca">
+          <AttributeID>Invoice Date Dayofweek</AttributeID>
+          <Name>Invoice Date Dayofweek</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3cc61ebf-61bd-4d5c-8fbc-937a19909a9a">
+          <AttributeID>Invoice Date Second</AttributeID>
+          <Name>Invoice Date Second</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="841e6271-d3d1-4605-88c8-41c596c3464b">
+      <ID>Invoice Date Day</ID>
+      <Name>Invoice Date Day</Name>
+      <Type>Days</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b34b6e0-cd83-4d07-97e8-016d061ff8bb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0013ce57-948c-4b80-b7e2-83f846289868">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_day</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b663a494-017d-4fba-9773-fb6c185a3c6d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="663d47e3-5584-437c-8da8-1ab20e31c719">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_month</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4dece7f0-4855-41c3-aa6d-1ebfdc0cbf81">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40ceb94e-7ecb-4dea-b282-4c7701db6cc1">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b12174a1-b3d0-4536-b9e7-8298c07cfd33">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5890992c-19e4-4fa3-ac63-44fb6054bcf3">
+          <TableID>dbo_Dim_Time</TableID>
+          <ColumnID>invoice_date_day</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4e10338f-7313-40e3-b75a-89d15b088601">
+          <AttributeID>Invoice Date Month</AttributeID>
+          <Name>Invoice Date Month</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b6f46dd2-2a9a-49ca-8936-bb8caa80237c">
+      <ID>Invoice Date Month</ID>
+      <Name>Invoice Date Month</Name>
+      <Type>Months</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7cd82211-e16a-4282-856f-8c68f187daea">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7de15c3-847a-4ebb-9305-130851c0494b">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_month</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ca9ab1ef-66b0-4c8d-92e7-e92498d4879e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8530541e-6e46-4929-9149-0aa604ee8151">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9ef28c84-1aac-42a6-b601-360041864a61">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1ff4f8e6-0cb5-41eb-a55c-801350c960aa">
+          <TableID>dbo_Dim_Time</TableID>
+          <ColumnID>invoice_date_month</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="347e3c05-ffa4-4eb2-a866-1877c7ab70e9">
+          <AttributeID>Invoice Date Year</AttributeID>
+          <Name>Invoice Date Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54dae006-1398-44b0-a1cb-70e71924d550">
+      <ID>Invoice Date Year</ID>
+      <Name>Invoice Date Year</Name>
+      <Type>Years</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6807b7b1-2383-45a0-a3ed-e928db3eca84">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c895f1e5-d150-496e-98cc-fad2ed69e41a">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="6db89e6f-8fd5-45b8-9d02-e616e434fd27">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8e2041f2-d55e-4b47-b649-3e01aaa90f85">
+          <TableID>dbo_Dim_Time</TableID>
+          <ColumnID>invoice_date_year</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c362fa18-71a3-4f1c-99f8-75a3c6c02acc">
+      <ID>Invoice Date Hour</ID>
+      <Name>Invoice Date Hour</Name>
+      <Type>Hours</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60f21ba5-4a9b-4304-906e-4a7370baabe5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a2cb64b-7afa-4bb5-9048-c763eb288d6b">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_hour</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="97cd2b3f-d90a-4792-a94d-51346f281ee4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a254b1b-c62e-464f-8c3c-84e0d0aedd26">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_day</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a3859de5-450f-4997-8897-6fc2e184092a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbe27d0f-4d24-4ad8-b739-9567faf6e3cf">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_month</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e58728a9-97c6-4295-9030-420795bedc19">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1aa5e6dd-9a6c-433f-951c-a397baaf1f87">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f691940d-51b3-4a6d-a3fe-7ae2caba12cb">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dafd87cc-39ab-4823-a559-7881a89c2d26">
+          <TableID>dbo_Dim_Time</TableID>
+          <ColumnID>invoice_date_hour</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6b629a1d-a6d3-4700-8e6c-dcbfaab24830">
+          <AttributeID>Invoice Date Day</AttributeID>
+          <Name>Invoice Date Day</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aa8a8be5-f6b8-4754-a08c-297f5908cec4">
+      <ID>Invoice Date Minute</ID>
+      <Name>Invoice Date Minute</Name>
+      <Type>Minutes</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f400c2f5-04e1-4415-9240-e5ad1ab8cf76">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85d0239c-453c-49f1-b367-d3fb1d708e18">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_minute</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d5ea26fc-7dca-4dfa-8155-d2f0c10597c0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d5fae62-1e70-4bd8-b7f8-6c6f0ff0a9c5">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_day</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6c486b53-5385-49a1-b690-6dab7c614a29">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="853be9d3-9f47-4b20-9973-714d1f49ba41">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_month</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="298668bb-6146-47bd-8c5f-c07b56f7498c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4455fce3-cd03-4061-ade0-1c46eae14358">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_year</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="57c54c70-719e-4d3d-aa67-6c2b69d723cd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1bc729b8-23ce-4afb-a209-c61530073cff">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_hour</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8f542ec1-ff71-4657-9a5c-b9aad7a40c38">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9a30abe3-ec0c-4011-8469-0b4d83ef9a69">
+          <TableID>dbo_Dim_Time</TableID>
+          <ColumnID>invoice_date_minute</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7e2a484d-b67a-48f6-86a3-ee5d1571d51b">
+          <AttributeID>Invoice Date Hour</AttributeID>
+          <Name>Invoice Date Hour</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="45aeec07-4f8d-48d4-85b0-d2197e36ba83">
+      <ID>Invoice Date Second</ID>
+      <Name>Invoice Date Second</Name>
+      <Type>Seconds</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cf308ca0-e3e4-49bf-921b-02753a482999">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad0f40f8-83c9-44cd-a0d5-de595d6eb788">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_second</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="557f0fe6-8920-4099-b00c-108d0f348c89">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66f4796b-50b3-4086-b4a5-13caf1cd97e0">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_minute</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b0f66c73-f535-43a3-8b98-3cef69f5da47">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ffb4a70-ede6-41f4-8a00-f4aa1c065e17">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_hour</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="26b6815e-82a0-4619-849c-79758568a411">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1302af5-d5f6-4643-8475-f8562f333829">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_day</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="021273eb-4dcd-4015-86b6-d4f1bd889e8b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1ca27dc-7da0-4aac-b6f4-b4262c044d56">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_month</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f0d23761-f050-4315-9393-cd8cf3471d81">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b34dbaf-82dd-4b4d-90db-d62bfe844fe6">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3d5caab3-a57b-4315-9daf-1340722fd33c">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a7fb10d5-cfce-4f00-a745-6e5d302d8103">
+          <TableID>dbo_Dim_Time</TableID>
+          <ColumnID>invoice_date_second</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="000b4c1b-016d-4ac3-9f96-2f136b3daccc">
+          <AttributeID>Invoice Date Minute</AttributeID>
+          <Name>Invoice Date Minute</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f4281d7-3403-48d4-a13e-0e1a0930204f">
+      <ID>Invoice Date Dayofweek</ID>
+      <Name>Invoice Date Dayofweek</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a9ed63bc-a446-45d2-901b-a239ca12e09b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65c7ddc3-5075-4680-ab5a-fc9d652faed0">
+            <TableID>dbo_Dim_Time</TableID>
+            <ColumnID>invoice_date_dayofweek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="10843d27-c600-461b-ac2d-a352e314d9c3">
+      <ID>Hierarchy</ID>
+      <Name>InvoiceTime</Name>
+      <Levels>
+        <Level dwd:design-time-name="8d1285ca-9e53-4653-8acb-0a2e7100b854">
+          <ID>Invoice Date Year</ID>
+          <Name>Invoice Date Year</Name>
+          <SourceAttributeID>Invoice Date Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="82f5062a-3295-4edd-97dc-267f9d856c5e">
+          <ID>Invoice Date Month</ID>
+          <Name>Invoice Date Month</Name>
+          <SourceAttributeID>Invoice Date Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9053b0f5-e4b4-4088-bc5e-14d8ca70b021">
+          <ID>Invoice Date Day</ID>
+          <Name>Invoice Date Day</Name>
+          <SourceAttributeID>Invoice Date Day</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0bce9db4-4064-4a02-a1d5-29d9d97c275b">
+          <ID>Invoice Date Hour</ID>
+          <Name>Invoice Date Hour</Name>
+          <SourceAttributeID>Invoice Date Hour</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6037e8a5-c578-4b11-9de5-3a2dcd9466a7">
+          <ID>Invoice Date Minute</ID>
+          <Name>Invoice Date Minute</Name>
+          <SourceAttributeID>Invoice Date Minute</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="3dce5131-3f5e-4f72-9afe-5b67bedb086a">
+          <ID>Invoice Date Second</ID>
+          <Name>Invoice Date Second</Name>
+          <SourceAttributeID>Invoice Date Second</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

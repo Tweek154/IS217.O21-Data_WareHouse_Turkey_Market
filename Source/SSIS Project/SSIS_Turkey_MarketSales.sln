@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "SSIS_Turkey_MarketSales", "SSIS_Turkey_MarketSales\SSIS_Turkey_MarketSales.dtproj", "{0778B696-D4EC-4128-8214-DD26D8D03995}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0778B696-D4EC-4128-8214-DD26D8D03995}.Development|Default.ActiveCfg = Development
+		{0778B696-D4EC-4128-8214-DD26D8D03995}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {104F2C0F-CB5A-4406-B7D3-915CF19A38ED}
+	EndGlobalSection
+EndGlobal

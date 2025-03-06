@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Turkey_MarketSales">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=ANHHOAMUIMO\TURKEY_MARKET;Initial Catalog=SSAS_Turkey_Market</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>2cae29a4-ffa2-4ee3-b24c-b01f56a9ebc5</DataSourceID>
+</RptDataSource>
